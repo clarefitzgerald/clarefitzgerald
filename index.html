@@ -1,54 +1,164 @@
-<!--index.html-->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title> My Portfolio </title>
-<link rel="stylesheet" href="vorteer.css">
-<link rel="stylesheet" href="vorteer.css">
-</head>
-<body>
-<!-- Navbar header section -->
-<header class="header">
-<nav class="navbar">
-<div class="logo">
-<h2 class="logo-heading"> Clare Fitzgerald </h2>
-</div>
-<div class="hamburger" id="hamburger">
-<i class="fas fa-bars hamburger-icon"></i>
-<i class="fas fa-times cross-icon"></i>
-</div>
-<div class="menu">
-<ul class="menu-list">
-<li class="menu-list-items">
-<a class="links" href="#home"> Home </a>
-</li>
-<li class="menu-list-items">
-<a class="links" href="#portfolio"> Portfolio </a>
-</li>
-<li class="menu-list-items">
-<a class="links" href="#about"> About </a>
-</li>
-<li class="menu-list-items">
-<a class="links" href="#services"> Services </a>
-</li>
-<li class="menu-list-items">
-<a class="links" href="#contact"> Contact Me </a>
-</li>
-</ul>
-</div>
-</nav>
-</header>
-<!-- Main hero banner -->
-<section id="home" class="hero">
-<div class="intro">
-<div class="headings">
-<h3 class="greet-heading"> Hello, I'm </h3>
-<h1 class="my-heading"> Clare Fitzgerald </h1>
-<h4 class="sub-heading">
-</div>
-</div>
-</section>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vorteer.css">
+  </head>
+  <body>
+    <div class="navbar dark">
+      <div class="nav-container">
+        <div class="brand-container"> Vorteer.CSS </div>
+      </div>
+    </div>
+    <div class="container">
+      <h1>Text</h1>
+      <hr class="solid">
+      <p>This is a paragraph of text.</p>
+      <input type="text" placeholder="Text Input">
+      <a href="https://www.example.com">This is a link</a>
+      <h1>Lists</h1>
+      <hr class="solid">
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+
+      <ul>
+        <a href="#" class="li-link active">Clickable Item 1</a>
+        <a href="#" class="li-link">Clickable Item 2</a>
+        <a href="#" class="li-link">Clickable Item 3</a>
+      </ul>
+
+      <ul>
+        <li>
+          <h4 class="li-heading">Heading Item 1</h4>
+          <p class="li-paragraph">Paragraph Item 1</p>
+        </li>
+        <li>
+          <h4 class="li-heading">Heading Item 2</h4>
+          <p class="li-paragraph">Paragraph Item 2</p>
+        </li>
+        <li>
+          <h4 class="li-heading">Heading Item 3</h4>
+          <p class="li-paragraph">Paragraph Item 3</p>
+        </li>
+      </ul>
+
+      <ul class="active">
+        <a href="#" class="li-link active">
+          <h4 class="li-heading">Clickable Heading Item 1</h4>
+          <p class="li-paragraph">Clickable Paragraph Item 1</p>
+        </a>
+        <a href="#" class="li-link">
+          <h4 class="li-heading">Clickable Heading Item 2</h4>
+          <p class="li-paragraph">Clickable Paragraph Item 2</p>
+        </a>
+        <a href="#" class="li-link">
+          <h4 class="li-heading">Clickable Heading Item 3</h4>
+          <p class="li-paragraph">Clickable Paragraph Item 3</p>
+        </a>
+      </ul>
+
+      <select>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+      </select>
+
+      <h1>Checkboxes</h1>
+      <hr class="solid">
+      <label for="checkbox">Check this:</label>
+      <input type="checkbox" id="checkbox">
+      <label for="radio1">Radio 1:</label>
+      <input type="radio" id="radio1" name="radio-group">
+      <label for="radio2">Radio 2:</label>
+      <input type="radio" id="radio2" name="radio-group">
+
+      <h1>Buttons</h1>
+      <hr class="solid">
+      <button>Large Default Button</button>
+      <button class="dark">Large Dark Button</button>
+      <button class="notice">Large Notice Button</button>
+      <button class="success">Large Success Button</button>
+      <button class="failure">Large Failure Button</button>
+      <button class="caution">Large Caution Button</button>
+      <br>
+      <button class="medium">Medium Default Button</button>
+      <button class="medium dark">Medium Dark Button</button>
+      <button class="medium notice">Medium Notice Button</button>
+      <button class="medium success">Medium Success Button</button>
+      <button class="medium failure">Medium Failure Button</button>
+      <button class="medium caution">Medium Caution Button</button>
+      <br>
+      <button class="small">Small Default Button</button>
+      <button class="small dark">Small Dark Button</button>
+      <button class="small notice">Small Notice Button</button>
+      <button class="small success">Small Success Button</button>
+      <button class="small failure">Small Failure Button</button>
+      <button class="small caution">Small Caution Button</button>
+
+      <h1>Alerts</h1>
+      <hr class="solid">
+      <div class="alert success">Success Alert Message</div>
+      <div class="alert notice">Notice Alert Message</div>
+      <div class="alert failure">Failure Alert Message</div>
+      <div class="alert caution">Caution Alert Message</div>
+
+      <h1>Wells</h1>
+      <hr class="solid">
+      <div class="well">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+      </div>
+      <div class="well dark">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+      </div>
+
+      <h1>Panels</h1>
+      <hr class="solid">
+      <div class="panel">
+        <h4 class="panel-heading">Test</h4>
+        <p class="panel-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+      </div>
+
+      <div class="panel dark">
+        <h4 class="panel-heading dark">Test</h4>
+        <p class="panel-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+      </div>
+
+      <div class="panel notice">
+        <h4 class="panel-heading notice">Test</h4>
+        <p class="panel-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+      </div>
+
+      <div class="panel success">
+        <h4 class="panel-heading success">Test</h4>
+        <p class="panel-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+      </div>
+
+      <div class="panel failure">
+        <h4 class="panel-heading failure">Test</h4>
+        <p class="panel-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+      </div>
+
+      <div class="panel caution">
+        <h4 class="panel-heading caution">Test</h4>
+        <p class="panel-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+      </div>
+
+      <h1>Badges</h1>
+      <hr class="solid">
+      <div class="badge">Badge</div>
+      <div class="badge dark">Badge</div>
+      <div class="badge notice">Badge</div>
+      <div class="badge success">Badge</div>
+      <div class="badge failure">Badge</div>
+      <div class="badge caution">Badge</div>
+    <h1>Thumbnails</h1>
+    <hr class="solid">
+    <img class="thumbnail" src="images/Portrait.png">
+    <img class="thumbnail circle" src="images/Portrait.png">
+  </div>
+  </body>
 </html>
